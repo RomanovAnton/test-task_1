@@ -11,6 +11,7 @@ function App() {
   const [column, setColumn] = useState(null);
   const [loader, setLoader] = useState(false);
   const [dataSizeSelect, setDataSizeSelect] = useState(true);
+  console.log(data);
 
   function dataRequest(url) {
     return fetch(url).then((res) =>
